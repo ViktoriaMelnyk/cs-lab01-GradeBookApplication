@@ -88,6 +88,7 @@ namespace GradeBook.GradeBooks
                 using (var reader = new StreamReader(file))
                 {
                     var json = reader.ReadToEnd();
+                   
                     return ConvertToGradeBook(json);
                 }
             }
